@@ -6,7 +6,7 @@ pipeline{
             steps{
                 echo "=============Building the project============="
                 bat """
-                    gcc -o ahmed calc.c
+                    gcc -o ahmed main.c
                     ahmed.exe
                 """
             }
