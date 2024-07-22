@@ -6,6 +6,26 @@ project(MyProject)                          #specfing the project name
 
 
 
+
+
+# Specify the path to Google Test
+set(GTEST_ROOT "C:/googletest")
+
+# Include the Google Test directory
+include_directories(${GTEST_ROOT}/googletest/include)
+include_directories(${GTEST_ROOT}/googlemock/include)
+
+# Link the Google Test libraries
+link_directories(${GTEST_ROOT}/build/lib/Release)
+
+
+
+
+
+
+
+
+
 #finding the package of the googletest
 find_package(GTest REQUIRED)           #finding the package of the googletest on the local machine
 
