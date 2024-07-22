@@ -1,12 +1,11 @@
-#include <stdio>
-#include <stdlib>
-#include <calc.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "calc.h"
 
 
 int main(){
-int x =0
-x = add(5 , 6);
-printf(x);
+int x =66;
+printf("%i",x);
 
   return 0;
 }
