@@ -7,7 +7,7 @@ project(MyProject)                          #specfing the project name
 
 
 
-
+#put this if (Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY)) fired
 set(GTEST_ROOT "C:/googletest/build/output")
 set(GTEST_INCLUDE_DIRS "C:/googletest/googletest/include/gtest")
 set(GTEST_LIBRARIES "${GTEST_ROOT}/lib")
