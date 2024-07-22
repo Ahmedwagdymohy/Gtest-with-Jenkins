@@ -8,15 +8,10 @@ project(MyProject)                          #specfing the project name
 
 
 
-# Specify the path to Google Test
-set(GTEST_ROOT "C:/googletest")
-
-# Include the Google Test directory
-include_directories(${GTEST_ROOT}/googletest/include)
-include_directories(${GTEST_ROOT}/googlemock/include)
-
-# Link the Google Test libraries
-link_directories(${GTEST_ROOT}/build/lib/Release)
+set(GTEST_ROOT "C:/googletest/build/output")
+set(GTEST_INCLUDE_DIRS "C:/googletest/googletest/include/gtest")
+set(GTEST_LIBRARIES "${GTEST_ROOT}/lib")
+include_directories(${GTEST_INCLUDE_DIRS})
 
 
 
