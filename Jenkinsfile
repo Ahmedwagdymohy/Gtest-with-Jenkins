@@ -14,7 +14,14 @@ pipeline{
         stage('Test'){
             steps{
                 script{
-                    echo "=============Testing the project============="
+                    echo "********************Testing the project********************"
+                    bat """
+                    mkdir build
+                    cd build
+                    cmake -G "MinGW Makefiles" ..
+                    make -j
+                    MyProject.exe
+                """
                 }
             }
         }
