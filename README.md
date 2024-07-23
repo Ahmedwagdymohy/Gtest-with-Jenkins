@@ -20,4 +20,11 @@
 ![image](https://github.com/user-attachments/assets/54f074f4-89c0-496e-8540-b03ea2f185c2)
         
 
-        
+### solving gtest/gtest.h: No such file or directory #include "gtest/gtest.h"
+Make sure that you have included the following in Vscode workspace
+        "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\study\\OneDrive\\Desktop\\v0.2",
+                "C:\\googletest\\build\\output\\include\\gtest",
+                "C:\\googletest\\build\\output\\include"
+            ],
