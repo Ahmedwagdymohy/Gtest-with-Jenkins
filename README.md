@@ -22,9 +22,20 @@
 
 ### solving gtest/gtest.h: No such file or directory #include "gtest/gtest.h"
 Make sure that you have included the following in Vscode workspace
-        "includePath": [
+```bash
+ "includePath": [
                 "${workspaceFolder}/**",
                 "C:\\Users\\study\\OneDrive\\Desktop\\v0.2",
                 "C:\\googletest\\build\\output\\include\\gtest",
                 "C:\\googletest\\build\\output\\include"
             ],
+
+```
+
+### to get a exe file of a  cpp usingGtest file:
+```bash
+g++ -fprofile-arcs -ftest-coverage -IC:\googletest\build\output\include -o test_calc calc.c test_calc.cpp -LC:\googletest\build\output\lib -lgtest -lgtest_main -pthread
+```
+-  specify the excutable name , replace with test_calc
+-  specify the Cpp file , replace with test_calc.cpp
+       
