@@ -1,4 +1,5 @@
 ## The Bat script working with this :
+### the bath script we use inside Jenkins to build and run the Cmake of the Gtest 
                         set BUILD_DIR=build
 
          if exist %BUILD_DIR% (
