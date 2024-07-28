@@ -38,5 +38,17 @@ pipeline{
             }
         }
 
+        stage('Code Coverage'){
+            script{
+                bat """
+                gcc -fprofile-arcs -ftest-coverage -o wagdy main.c test_branches.c
+                ahmed.exe  
+                echo ================================= The result of the coverage is : ===================================================
+                gcov -b test_branches.c
+
+                """
+            }
+        }
+
     }
 }

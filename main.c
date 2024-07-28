@@ -1,11 +1,11 @@
+#include "test_branches.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include "calc.h"
+
+int main() {
+    int input = 5;
 
 
-int main(){
-int x =66;
-printf("%i",x);
+    evaluateCondition(input);
 
-  return 0;
+    return 0;
 }
